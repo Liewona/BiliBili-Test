@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+
+   <LinearLayout
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal"
+       android:layout_gravity="center"
+       >
+       <View
+           android:id="@+id/line_head"
+           android:layout_width="35dp"
+           android:layout_height="1.5dp"
+           android:background="#C4DFE6"
+           android:layout_gravity="center"
+           >
+
+       </View>
+       <TextView
+           android:id="@+id/movie_time"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="11-18 00:00"
+           android:background="@drawable/movie_bt_bg"
+           android:paddingLeft="5dp"
+           android:paddingRight="5dp"
+           >
+       </TextView>
+       <View
+           android:id="@+id/line_bottom"
+           android:layout_width="35dp"
+           android:layout_height="1.5dp"
+           android:background="#C4DFE6"
+           android:layout_gravity="center"
+           >
+
+       </View>
+
+   </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp"
+        >
+
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/movie_im"
+            android:layout_width="130dp"
+            android:layout_height="200dp"
+            android:src="@mipmap/soon_bg_4"
+            android:scaleType="centerCrop"
+            app:riv_corner_radius_bottom_left="10dp"
+            app:riv_corner_radius_top_left="10dp"
+            app:riv_corner_radius_bottom_right="10dp"
+            app:riv_corner_radius_top_right="10dp"
+            >
+
+        </com.makeramen.roundedimageview.RoundedImageView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="972追剧"
+            android:textColor="@color/colorWrite"
+            android:layout_marginTop="175dp"
+            android:layout_marginLeft="5dp"
+            >
+
+        </TextView>
+        <LinearLayout
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/movie_im"
+            android:orientation="vertical"
+            android:layout_marginTop="5dp"
+            >
+            <TextView
+                android:id="@+id/movie_tile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="蔚蓝海岸 N"
+                android:textColor="@color/colorBlack"
+                android:textFontWeight="1"
+                android:layout_gravity="center"
+
+                >
+
+            </TextView>
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+
+
+</LinearLayout>

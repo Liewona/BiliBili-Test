@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    >
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:id="@+id/rl_show1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <com.makeramen.roundedimageview.RoundedImageView
+                android:id="@+id/iamge_one"
+                android:layout_width="120dp"
+                android:layout_height="180dp"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/show_video_7"
+                app:riv_corner_radius_bottom_left="@dimen/chase_showImageBG"
+                app:riv_corner_radius_bottom_right="@dimen/chase_showImageBG"
+                app:riv_corner_radius_top_left="@dimen/chase_showImageBG"
+                app:riv_corner_radius_top_right="@dimen/chase_showImageBG">
+
+            </com.makeramen.roundedimageview.RoundedImageView>
+
+            <ImageView
+                android:id="@+id/im_heart1"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/heart"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="2dp"
+                >
+            </ImageView>
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="13.5万追番"
+                android:textSize="9dp"
+                android:textColor="@color/darkBlack"
+                android:layout_below="@+id/im_heart1"
+                android:layout_marginTop="140dp"
+                android:layout_marginLeft="4dp"
+                >
+            </TextView>
+
+            <TextView
+                android:id="@+id/videotile_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="启幕熊仔"
+                android:textSize="10dp"
+                android:textColor="@color/colorBlack"
+                android:layout_below="@+id/iamge_one"
+                >
+            </TextView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="更新至199话"
+                android:textSize="9dp"
+                android:layout_below="@+id/videotile_1">
+
+            </TextView>
+
+        </RelativeLayout>
+
+        //videoShow_2
+        <RelativeLayout
+            android:id="@+id/rl_show2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/rl_show1"
+            android:layout_marginLeft="12dp"
+            >
+            <com.makeramen.roundedimageview.RoundedImageView
+                android:id="@+id/iamge_two"
+                android:layout_width="120dp"
+                android:layout_height="180dp"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/show_video_7"
+                app:riv_corner_radius_bottom_left="@dimen/chase_showImageBG"
+                app:riv_corner_radius_bottom_right="@dimen/chase_showImageBG"
+                app:riv_corner_radius_top_left="@dimen/chase_showImageBG"
+                app:riv_corner_radius_top_right="@dimen/chase_showImageBG">
+
+            </com.makeramen.roundedimageview.RoundedImageView>
+
+            <ImageView
+                android:id="@+id/im_heart2"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/heart"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="2dp"
+                >
+            </ImageView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="70dp"
+                android:layout_marginTop="5dp"
+                android:text="会员专享"
+                android:textSize="11dp"
+                android:textColor="@color/colorWrite"
+                android:background="@drawable/share_icon"
+
+                >
+            </TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="13.5万追番"
+                android:textSize="9dp"
+                android:textColor="@color/darkBlack"
+                android:layout_below="@+id/im_heart2"
+                android:layout_marginTop="140dp"
+                android:layout_marginLeft="4dp"
+                >
+            </TextView>
+
+            <TextView
+                android:id="@+id/videotile_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="欢迎来到实力至上"
+                android:textSize="10dp"
+                android:textColor="@color/colorBlack"
+                android:layout_below="@+id/iamge_two"
+                >
+            </TextView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="更新至18集"
+                android:textSize="9dp"
+                android:layout_below="@+id/videotile_2">
+
+            </TextView>
+        </RelativeLayout>
+
+        //videoShow_3
+        <RelativeLayout
+            android:id="@+id/rl_show3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/rl_show2"
+            android:layout_marginLeft="10dp"
+            >
+            <com.makeramen.roundedimageview.RoundedImageView
+                android:id="@+id/iamge_three"
+                android:layout_width="120dp"
+                android:layout_height="180dp"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/show_video_7"
+                app:riv_corner_radius_bottom_left="@dimen/chase_showImageBG"
+                app:riv_corner_radius_bottom_right="@dimen/chase_showImageBG"
+                app:riv_corner_radius_top_left="@dimen/chase_showImageBG"
+                app:riv_corner_radius_top_right="@dimen/chase_showImageBG">
+
+            </com.makeramen.roundedimageview.RoundedImageView>
+
+            <ImageView
+                android:id="@+id/im_heart3"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/heart"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="2dp"
+                >
+            </ImageView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="70dp"
+                android:layout_marginTop="5dp"
+                android:text="会员抢先"
+                android:textSize="11dp"
+                android:textColor="@color/colorWrite"
+                android:background="@drawable/share_icon"
+                >
+            </TextView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="13.5万追番"
+                android:textSize="9dp"
+                android:textColor="@color/darkBlack"
+                android:layout_below="@+id/im_heart3"
+                android:layout_marginTop="140dp"
+                android:layout_marginLeft="4dp"
+                >
+            </TextView>
+            <TextView
+                android:id="@+id/videotile_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="毁约但"
+                android:textSize="10dp"
+                android:textColor="@color/colorBlack"
+                android:layout_below="@+id/iamge_three"
+                >
+            </TextView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="更新至18集"
+                android:textSize="9dp"
+                android:layout_below="@+id/videotile_3">
+
+            </TextView>
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+    //videoShow_1
+
+
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        >
+        <ImageView
+
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:src="@mipmap/icon_chang"
+            android:layout_gravity="center"
+            >
+
+        </ImageView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="换一换"
+            android:textSize="10dp"
+            android:textColor="@color/nav_bar_text_select_color"
+            android:layout_marginLeft="10dp"
+            >
+
+        </TextView>
+
+    </LinearLayout>
+
+
+
+
+
+
+</LinearLayout>

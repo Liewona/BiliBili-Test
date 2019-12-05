@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--第一列-->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <RelativeLayout
+            android:id="@+id/rl_menu_show1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/rl_show1"
+            >
+            <com.makeramen.roundedimageview.RoundedImageView
+                android:id="@+id/iamge_one"
+                android:layout_width="@dimen/chase_week_imageshow_wide"
+                android:layout_height="@dimen/chase_week_imageshow_high"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/show_video_2"
+                app:riv_corner_radius_bottom_left="@dimen/chase_showImageBG"
+                app:riv_corner_radius_bottom_right="@dimen/chase_showImageBG"
+                app:riv_corner_radius_top_left="@dimen/chase_showImageBG"
+                app:riv_corner_radius_top_right="@dimen/chase_showImageBG">
+
+            </com.makeramen.roundedimageview.RoundedImageView>
+
+            <TextView
+                android:id="@+id/videotile_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="罗小黑"
+                android:textSize="10dp"
+                android:textColor="@color/colorBlack"
+                android:layout_below="@+id/iamge_one"
+                >
+            </TextView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="更新至18集"
+                android:textSize="9dp"
+                android:layout_below="@+id/videotile_1">
+
+            </TextView>
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/rl_menu_show2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/rl_show1"
+            android:layout_marginLeft="@dimen/dp_10"
+            >
+            <com.makeramen.roundedimageview.RoundedImageView
+                android:id="@+id/iamge_two"
+                android:layout_width="@dimen/chase_week_imageshow_wide"
+                android:layout_height="@dimen/chase_week_imageshow_high"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/show_video_2"
+                app:riv_corner_radius_bottom_left="@dimen/chase_showImageBG"
+                app:riv_corner_radius_bottom_right="@dimen/chase_showImageBG"
+                app:riv_corner_radius_top_left="@dimen/chase_showImageBG"
+                app:riv_corner_radius_top_right="@dimen/chase_showImageBG">
+
+            </com.makeramen.roundedimageview.RoundedImageView>
+
+            <TextView
+                android:id="@+id/videotile_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="罗小黑"
+                android:textSize="10dp"
+                android:textColor="@color/colorBlack"
+                android:layout_below="@+id/iamge_two"
+                >
+            </TextView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="更新至18集"
+                android:textSize="9dp"
+                android:layout_below="@+id/videotile_2">
+
+            </TextView>
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/rl_menu_show3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/rl_show1"
+            android:layout_marginLeft="@dimen/dp_10"
+            >
+            <com.makeramen.roundedimageview.RoundedImageView
+                android:id="@+id/iamge_three"
+                android:layout_width="@dimen/chase_week_imageshow_wide"
+                android:layout_height="@dimen/chase_week_imageshow_high"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/show_video_2"
+                app:riv_corner_radius_bottom_left="@dimen/chase_showImageBG"
+                app:riv_corner_radius_bottom_right="@dimen/chase_showImageBG"
+                app:riv_corner_radius_top_left="@dimen/chase_showImageBG"
+                app:riv_corner_radius_top_right="@dimen/chase_showImageBG">
+
+            </com.makeramen.roundedimageview.RoundedImageView>
+
+            <TextView
+                android:id="@+id/videotile_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="罗小黑"
+                android:textSize="10dp"
+                android:textColor="@color/colorBlack"
+                android:layout_below="@+id/iamge_three"
+                >
+            </TextView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="更新至18集"
+                android:textSize="9dp"
+                android:layout_below="@+id/videotile_3">
+
+            </TextView>
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/rl_menu_show4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/rl_show1"
+            android:layout_marginLeft="@dimen/dp_10"
+            >
+            <com.makeramen.roundedimageview.RoundedImageView
+                android:id="@+id/iamge_four"
+                android:layout_width="@dimen/chase_week_imageshow_wide"
+                android:layout_height="@dimen/chase_week_imageshow_high"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/show_video_2"
+                app:riv_corner_radius_bottom_left="@dimen/chase_showImageBG"
+                app:riv_corner_radius_bottom_right="@dimen/chase_showImageBG"
+                app:riv_corner_radius_top_left="@dimen/chase_showImageBG"
+                app:riv_corner_radius_top_right="@dimen/chase_showImageBG">
+
+            </com.makeramen.roundedimageview.RoundedImageView>
+
+            <TextView
+                android:id="@+id/videotile_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="罗小黑"
+                android:textSize="10dp"
+                android:textColor="@color/colorBlack"
+                android:layout_below="@+id/iamge_four"
+                >
+            </TextView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="更新至18集"
+                android:textSize="9dp"
+                android:layout_below="@+id/videotile_4">
+
+            </TextView>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <!--第二列-->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        >
+        <RelativeLayout
+            android:id="@+id/rl2_menu_show1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/rl_show2"
+            >
+            <com.makeramen.roundedimageview.RoundedImageView
+                android:id="@+id/rl_2_iamge_one"
+                android:layout_width="@dimen/chase_week_imageshow_wide"
+                android:layout_height="@dimen/chase_week_imageshow_high"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/show_video_2"
+                app:riv_corner_radius_bottom_left="@dimen/chase_showImageBG"
+                app:riv_corner_radius_bottom_right="@dimen/chase_showImageBG"
+                app:riv_corner_radius_top_left="@dimen/chase_showImageBG"
+                app:riv_corner_radius_top_right="@dimen/chase_showImageBG">
+
+            </com.makeramen.roundedimageview.RoundedImageView>
+
+            <TextView
+                android:id="@+id/rl_2_videotile_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="罗小黑"
+                android:textSize="10dp"
+                android:textColor="@color/colorBlack"
+                android:layout_below="@+id/rl_2_iamge_one"
+                >
+            </TextView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="更新至18集"
+                android:textSize="9dp"
+                android:layout_below="@+id/rl_2_videotile_1">
+
+            </TextView>
+        </RelativeLayout>
+
+        <!--two-->
+        <RelativeLayout
+            android:id="@+id/rl_2_menu_show2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/rl_show1"
+            android:layout_marginLeft="@dimen/dp_10"
+            >
+            <com.makeramen.roundedimageview.RoundedImageView
+                android:id="@+id/rl_2_iamge_two"
+                android:layout_width="@dimen/chase_week_imageshow_wide"
+                android:layout_height="@dimen/chase_week_imageshow_high"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/show_video_2"
+                app:riv_corner_radius_bottom_left="@dimen/chase_showImageBG"
+                app:riv_corner_radius_bottom_right="@dimen/chase_showImageBG"
+                app:riv_corner_radius_top_left="@dimen/chase_showImageBG"
+                app:riv_corner_radius_top_right="@dimen/chase_showImageBG">
+
+            </com.makeramen.roundedimageview.RoundedImageView>
+
+            <TextView
+                android:id="@+id/rl_2_videotile_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="罗小黑"
+                android:textSize="10dp"
+                android:textColor="@color/colorBlack"
+                android:layout_below="@+id/rl_2_iamge_two"
+                >
+            </TextView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="更新至18集"
+                android:textSize="9dp"
+                android:layout_below="@+id/rl_2_videotile_2">
+
+            </TextView>
+        </RelativeLayout>
+
+        <!--three-->
+        <RelativeLayout
+            android:id="@+id/rl_2_menu_show3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/rl_show2"
+            android:layout_marginLeft="@dimen/dp_10"
+            >
+            <com.makeramen.roundedimageview.RoundedImageView
+                android:id="@+id/rl_2_iamge_three"
+                android:layout_width="@dimen/chase_week_imageshow_wide"
+                android:layout_height="@dimen/chase_week_imageshow_high"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/show_video_2"
+                app:riv_corner_radius_bottom_left="@dimen/chase_showImageBG"
+                app:riv_corner_radius_bottom_right="@dimen/chase_showImageBG"
+                app:riv_corner_radius_top_left="@dimen/chase_showImageBG"
+                app:riv_corner_radius_top_right="@dimen/chase_showImageBG">
+
+            </com.makeramen.roundedimageview.RoundedImageView>
+
+            <TextView
+                android:id="@+id/rl_2_videotile_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="罗小黑"
+                android:textSize="10dp"
+                android:textColor="@color/colorBlack"
+                android:layout_below="@+id/rl_2_iamge_three"
+                >
+            </TextView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="更新至18集"
+                android:textSize="9dp"
+                android:layout_below="@+id/rl_2_videotile_3">
+
+            </TextView>
+        </RelativeLayout>
+
+        <!--four-->
+        <RelativeLayout
+            android:id="@+id/rl_2_menu_show4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/rl_show2"
+            android:layout_marginLeft="@dimen/dp_10"
+            >
+            <com.makeramen.roundedimageview.RoundedImageView
+                android:id="@+id/rl_2_iamge_four"
+                android:layout_width="@dimen/chase_week_imageshow_wide"
+                android:layout_height="@dimen/chase_week_imageshow_high"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/show_video_2"
+                app:riv_corner_radius_bottom_left="@dimen/chase_showImageBG"
+                app:riv_corner_radius_bottom_right="@dimen/chase_showImageBG"
+                app:riv_corner_radius_top_left="@dimen/chase_showImageBG"
+                app:riv_corner_radius_top_right="@dimen/chase_showImageBG">
+
+            </com.makeramen.roundedimageview.RoundedImageView>
+
+            <TextView
+                android:id="@+id/rl_2_videotile_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="罗小黑"
+                android:textSize="10dp"
+                android:textColor="@color/colorBlack"
+                android:layout_below="@+id/rl_2_iamge_four"
+                >
+            </TextView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="更新至18集"
+                android:textSize="9dp"
+                android:layout_below="@+id/rl_2_videotile_4">
+
+            </TextView>
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

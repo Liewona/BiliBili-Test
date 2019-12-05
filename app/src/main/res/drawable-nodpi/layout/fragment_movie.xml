@@ -1,0 +1,379 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/movie_page"
+    android:orientation="vertical"
+    tools:context=".mainviews.headpage.view.fragments.MovieFragment">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="15dp"
+            >
+            //顶部轮播
+            <com.lany.banner.BannerView
+                android:id="@+id/movie_banner"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:background="@drawable/btn_rank_bg"
+                >
+
+            </com.lany.banner.BannerView>
+            //菜单
+            <include layout="@layout/movie_menu"></include>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/chase_linehight2"
+                android:background="@color/darkBlack"
+                android:layout_marginTop="@dimen/dp_18"
+                >
+            </View>
+            //纪录片热播
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_10"
+                android:orientation="vertical"
+                >
+                <RelativeLayout
+                    android:id="@+id/Rlayout_tile_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/dp_10"
+                    >
+                    <TextView
+                        android:id="@+id/tile_1_tv_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="纪录片热播"
+                        android:textSize="@dimen/movie_tile_left"
+                        android:textColor="@color/colorBlack"
+                        >
+                    </TextView>
+                    <TextView
+                        android:id="@+id/tile_1_tv_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="查看更多>"
+                        android:textSize="@dimen/movie_tile_right"
+                        android:layout_alignParentRight="true"
+                        >
+
+                    </TextView>
+                </RelativeLayout>
+                //引用外部布局
+
+                <include layout="@layout/movie_recommand1"></include>
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/chase_linehight2"
+                android:background="@color/darkBlack"
+                android:layout_marginTop="@dimen/dp_18"
+                >
+            </View>
+
+            //电影热播
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_10"
+                android:orientation="vertical"
+                >
+                <RelativeLayout
+                    android:id="@+id/Rlayout_tile_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    >
+
+                    <TextView
+                        android:id="@+id/tile_2_tv_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="电影热播"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="@dimen/movie_tile_left"
+                        >
+
+                    </TextView>
+
+                    <TextView
+                        android:id="@+id/tile_2_tv_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:text="查看更多>"
+                        android:textSize="@dimen/movie_tile_right">
+
+                    </TextView>
+                </RelativeLayout>
+                //引用外部布局
+                <include layout="@layout/movie_recommand1"></include>
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/chase_linehight2"
+                android:background="@color/darkBlack"
+                android:layout_marginTop="@dimen/dp_18"
+                >
+            </View>
+
+
+
+            //电视剧热播
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_10"
+                android:orientation="vertical"
+                >
+                <RelativeLayout
+                    android:id="@+id/Rlayout_tile_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    >
+                    <TextView
+                        android:id="@+id/tile_3_tv_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="电视剧热播"
+                        android:textSize="@dimen/movie_tile_left"
+                        android:textColor="@color/colorBlack"
+                        >
+                    </TextView>
+                    <TextView
+                        android:id="@+id/tile_3_tv_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="查看更多>"
+                        android:textSize="@dimen/movie_tile_right"
+                        android:layout_alignParentRight="true"
+                        >
+
+                    </TextView>
+                </RelativeLayout>
+                //引用外部布局
+
+                <include layout="@layout/movie_recommand2"></include>
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/chase_linehight2"
+                android:background="@color/darkBlack"
+                android:layout_marginTop="@dimen/dp_18"
+                >
+            </View>
+
+
+            //综艺热播
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_10"
+                android:orientation="vertical"
+                >
+                <RelativeLayout
+                    android:id="@+id/Rlayout_tile_4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    >
+                    <TextView
+                        android:id="@+id/tile_4_tv_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="纪录片热播"
+                        android:textSize="@dimen/movie_tile_left"
+                        android:textColor="@color/colorBlack"
+                        >
+                    </TextView>
+                    <TextView
+                        android:id="@+id/tile_4_tv_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="查看更多>"
+                        android:textSize="@dimen/movie_tile_right"
+                        android:layout_alignParentRight="true"
+                        >
+
+                    </TextView>
+                </RelativeLayout>
+                //引用外部布局
+                <include layout="@layout/movie_recommand2"></include>
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/chase_linehight2"
+                android:background="@color/darkBlack"
+                android:layout_marginTop="@dimen/dp_18"
+                >
+            </View>
+
+            //影视相关推荐
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_10"
+                android:orientation="vertical"
+                >
+
+                //引用外部布局
+                <include layout="@layout/movie_relative"></include>
+            </LinearLayout>
+            <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/chase_linehight2"
+            android:background="@color/darkBlack"
+            android:layout_marginTop="@dimen/dp_18"
+            >
+            </View>
+
+
+            //即将开播
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_10"
+                android:orientation="vertical"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="即将开播"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/movie_tile_left"
+                    >
+                </TextView>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/movie_show_soon"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_10"
+                    >
+
+                </androidx.recyclerview.widget.RecyclerView>
+
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/chase_linehight2"
+                android:background="@color/darkBlack"
+                android:layout_marginTop="@dimen/dp_18"
+                >
+            </View>
+
+            //大家都在看
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_10"
+                >
+                <include layout="@layout/movie_welook"></include>
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/chase_linehight2"
+                android:background="@color/darkBlack"
+                android:layout_marginTop="@dimen/dp_18"
+                >
+            </View>
+
+
+            //热门榜单
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_10"
+                android:orientation="vertical"
+                >
+                <RelativeLayout
+                    android:id="@+id/Rlayout_tile_5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    >
+                    <TextView
+                        android:id="@+id/tile_5_tv_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="热门榜单"
+                        android:textSize="@dimen/movie_tile_left"
+                        android:textColor="@color/colorBlack"
+                        >
+                    </TextView>
+                    <TextView
+                        android:id="@+id/tile_5_tv_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="查看更多>"
+                        android:textSize="@dimen/movie_tile_right"
+                        android:layout_alignParentRight="true"
+                        >
+
+                    </TextView>
+                </RelativeLayout>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/movie_show_top"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                </androidx.recyclerview.widget.RecyclerView>
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="查看完整榜单 >"
+                        android:textSize="10dp"
+                        android:textColor="@color/nav_bar_text_select_color"
+                        android:layout_marginLeft="10dp"
+                        >
+                </TextView>
+
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/chase_linehight2"
+                android:background="@color/darkBlack"
+                android:layout_marginTop="@dimen/dp_18"
+                >
+            </View>
+
+
+            //底部分类
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/movie_show_type"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                </androidx.recyclerview.widget.RecyclerView>
+
+            </LinearLayout>
+
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1000dp">
+
+            </ImageView>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</FrameLayout>

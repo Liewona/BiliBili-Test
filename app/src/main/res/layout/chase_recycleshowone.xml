@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/showOne_iamge"
+        android:layout_width="110dp"
+        android:layout_height="70dp"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/roundplay_2"
+        app:riv_corner_radius_bottom_left="@dimen/chase_showImageBG"
+        app:riv_corner_radius_bottom_right="@dimen/chase_showImageBG"
+        app:riv_corner_radius_top_left="@dimen/chase_showImageBG"
+        app:riv_corner_radius_top_right="@dimen/chase_showImageBG">
+
+    </com.makeramen.roundedimageview.RoundedImageView>
+
+    <ImageView
+        android:id="@+id/im_heart"
+        android:layout_width="14dp"
+        android:layout_height="14dp"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/heart"
+        android:layout_marginTop="2dp"
+        android:layout_marginLeft="2dp"
+        >
+    </ImageView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="73dp"
+        android:layout_marginTop="3dp"
+        android:text="会员专享"
+        android:textSize="8dp"
+        android:textColor="@color/colorWrite"
+        android:background="@drawable/share_icon"
+
+        >
+
+
+    </TextView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="更新至中章"
+        android:textSize="9dp"
+        android:textColor="@color/darkBlack"
+        android:layout_below="@+id/im_heart"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="3dp"
+        >
+    </TextView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="罗小黑"
+        android:textSize="10dp"
+        android:textColor="@color/colorBlack"
+        android:layout_below="@+id/showOne_iamge"
+        >
+    </TextView>
+
+</RelativeLayout>

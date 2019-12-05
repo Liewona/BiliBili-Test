@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.bilibili">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_logo"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/ic_logo"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true"
+        tools:ignore="UnusedAttribute">
+        <activity android:name=".activitys.VideoDetailActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar">
+        </activity>
+        <activity android:name=".laiyu.RegisterActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar"></activity>
+        <activity android:name=".laiyu.LoginActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar"></activity>
+        <activity android:name=".navigation.headpage.mainviews.mine.MyLessonActivity"></activity>
+        <activity android:name=".navigation.headpage.mainviews.mine.LiveCenterActivity" />
+        <activity android:name=".navigation.headpage.mainviews.mine.VipShopActivity" />
+        <activity android:name=".navigation.headpage.mainviews.mine.MyWaltActivity" />
+        <activity android:name=".navigation.headpage.mainviews.mine.WatchLaterActivity"/>
+        <activity android:name=".navigation.headpage.mainviews.mine.MyIdolActivity" />
+        <activity android:name=".navigation.headpage.mainviews.mine.MyCollectActivity" />
+        <activity android:name=".navigation.headpage.mainviews.mine.MyHistoryActivity" />
+        <activity android:name=".navigation.headpage.mainviews.mine.MyDownLoadActivity" />
+        <activity android:name=".navigation.headpage.mainviews.mine.FollowMineActivity" />
+        <activity android:name=".navigation.headpage.mainviews.mine.MyFollowActivity" />
+        <activity android:name=".activitys.CommodityDetailActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar">
+        </activity>
+        <activity
+            android:name=".activitys.StartPageActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:launchMode="singleTask"
+            android:theme="@style/AppTheme.NoActionBar" />
+    </application>
+
+</manifest>

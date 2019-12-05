@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="影视相关推荐"
+        android:textSize="@dimen/movie_tile_left"
+        android:textColor="@color/colorBlack"
+        >
+
+    </TextView>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        >
+
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/show_1_iamge"
+            android:layout_width="130dp"
+            android:layout_height="85dp"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/roundplay_2"
+            app:riv_corner_radius_bottom_left="@dimen/chase_showImageBG"
+            app:riv_corner_radius_bottom_right="@dimen/chase_showImageBG"
+            app:riv_corner_radius_top_left="@dimen/chase_showImageBG"
+            app:riv_corner_radius_top_right="@dimen/chase_showImageBG">
+
+        </com.makeramen.roundedimageview.RoundedImageView>
+
+        <RelativeLayout
+            android:id="@+id/show_2_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_toRightOf="@id/show_1_iamge"
+            android:layout_marginLeft="5dp"
+            >
+            <TextView
+                android:id="@+id/show_2_tv_content"
+                android:layout_width="260dp"
+                android:layout_height="wrap_content"
+                android:text="警察办案查监控：发现惊人一幕奥术大师多鼎折覆餗"
+                android:textSize="14dp"
+                android:textColor="@color/colorBlack"
+                android:maxLines="2"
+                android:layout_marginLeft="3dp"
+                >
+            </TextView>
+
+            <TextView
+                android:id="@+id/show_2_tv_nums"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="每周六20:00"
+                android:textSize="11dp"
+                android:textColor="@color/moreDarkblack"
+                android:layout_below="@+id/show_2_tv_content"
+                android:layout_marginTop="@dimen/movie_content_time"
+                >
+            </TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="不见不散"
+                android:textSize="11dp"
+                android:textColor="@color/moreDarkblack"
+                android:layout_toRightOf="@+id/show_2_tv_nums"
+                android:layout_below="@+id/show_2_tv_content"
+                android:layout_marginTop="@dimen/movie_content_time"
+                android:layout_marginLeft="@dimen/dp_10"
+                >
+            </TextView>
+
+        </RelativeLayout>
+
+
+
+
+
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/chase_linehight2"
+        android:background="@color/darkBlack"
+        android:layout_marginTop="@dimen/dp_18"
+        >
+    </View>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        >
+
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/show_3_iamge"
+            android:layout_width="130dp"
+            android:layout_height="85dp"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/roundplay_2"
+            app:riv_corner_radius_bottom_left="@dimen/chase_showImageBG"
+            app:riv_corner_radius_bottom_right="@dimen/chase_showImageBG"
+            app:riv_corner_radius_top_left="@dimen/chase_showImageBG"
+            app:riv_corner_radius_top_right="@dimen/chase_showImageBG">
+
+        </com.makeramen.roundedimageview.RoundedImageView>
+
+        <RelativeLayout
+            android:id="@+id/show_3_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_toRightOf="@id/show_3_iamge"
+            android:layout_marginLeft="5dp"
+            >
+            <TextView
+                android:id="@+id/show_3tv_content"
+                android:layout_width="260dp"
+                android:layout_height="wrap_content"
+                android:text="穿越剧解锁林晓晓穿越秘籍？没想到 你好骚 成经典"
+                android:textSize="14dp"
+                android:textColor="@color/colorBlack"
+                android:maxLines="2"
+                android:layout_marginLeft="3dp"
+                >
+            </TextView>
+
+            <TextView
+                android:id="@+id/show_3_tv_nums"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="每周六20:00"
+                android:textSize="11dp"
+                android:textColor="@color/moreDarkblack"
+                android:layout_below="@+id/show_3tv_content"
+                android:layout_marginTop="@dimen/movie_content_time"
+                >
+            </TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="不见不散"
+                android:textSize="11dp"
+                android:textColor="@color/moreDarkblack"
+                android:layout_toRightOf="@+id/show_3_tv_nums"
+                android:layout_below="@+id/show_3tv_content"
+                android:layout_marginTop="@dimen/movie_content_time"
+                android:layout_marginLeft="@dimen/dp_10"
+                >
+            </TextView>
+
+        </RelativeLayout>
+
+
+
+
+
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/chase_linehight2"
+        android:background="@color/darkBlack"
+        android:layout_marginTop="@dimen/dp_18"
+        >
+    </View>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        >
+
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/showOne_iamge"
+            android:layout_width="130dp"
+            android:layout_height="85dp"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/roundplay_2"
+            app:riv_corner_radius_bottom_left="@dimen/chase_showImageBG"
+            app:riv_corner_radius_bottom_right="@dimen/chase_showImageBG"
+            app:riv_corner_radius_top_left="@dimen/chase_showImageBG"
+            app:riv_corner_radius_top_right="@dimen/chase_showImageBG">
+
+        </com.makeramen.roundedimageview.RoundedImageView>
+
+        <RelativeLayout
+            android:id="@+id/show_1_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_toRightOf="@id/showOne_iamge"
+            android:layout_marginLeft="5dp"
+            >
+
+            <TextView
+                android:id="@+id/show_1_tv_content"
+                android:layout_width="260dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dp"
+                android:maxLines="2"
+                android:text="你和我曾经有共同爱好，我们两用英文对话真的很搞笑"
+                android:textColor="@color/colorBlack"
+                android:textSize="14dp">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/show_1_tv_nums"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="每周六20:00"
+                android:textSize="11dp"
+                android:textColor="@color/moreDarkblack"
+                android:layout_below="@+id/show_1_tv_content"
+                android:layout_marginTop="@dimen/movie_content_time"
+                >
+            </TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="不见不散"
+                android:textSize="11dp"
+                android:textColor="@color/moreDarkblack"
+                android:layout_toRightOf="@+id/show_1_tv_nums"
+                android:layout_below="@+id/show_1_tv_content"
+                android:layout_marginTop="@dimen/movie_content_time"
+                android:layout_marginLeft="@dimen/dp_10"
+                >
+            </TextView>
+
+        </RelativeLayout>
+
+
+
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>

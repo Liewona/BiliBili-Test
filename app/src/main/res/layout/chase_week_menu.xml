@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/dp_10"
+        >
+
+        <TextView
+            android:id="@+id/week_tv_1"
+            android:layout_width="40dp"
+            android:layout_height="20dp"
+            android:text="@string/chase_week_1"
+            android:textSize="14dp"
+            android:gravity="center"
+            >
+        </TextView>
+        <TextView
+            android:id="@+id/week_tv_2"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:text="@string/chase_week_2"
+            android:textSize="14dp"
+            android:layout_marginLeft="@dimen/chase_weekGap"
+            android:gravity="center"
+
+            >
+        </TextView>
+        <TextView
+            android:id="@+id/week_tv_3"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:text="@string/chase_week_3"
+            android:textSize="14dp"
+            android:layout_marginLeft="@dimen/chase_weekGap"
+            android:gravity="center"
+
+
+            >
+        </TextView>
+        <TextView
+            android:id="@+id/week_tv_4"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:text="@string/chase_week_4"
+            android:textSize="14dp"
+            android:gravity="center"
+            android:layout_marginLeft="@dimen/chase_weekGap"
+            >
+        </TextView>
+        <TextView
+            android:id="@+id/week_tv_5"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:text="@string/chase_week_5"
+            android:textSize="14dp"
+            android:gravity="center"
+            android:layout_marginLeft="@dimen/chase_weekGap"
+            >
+        </TextView>
+        <TextView
+            android:id="@+id/week_tv_6"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:text="@string/chase_week_6"
+            android:textSize="14dp"
+            android:layout_marginLeft="@dimen/chase_weekGap"
+            android:gravity="center"
+
+            >
+        </TextView>
+        <TextView
+            android:id="@+id/week_tv_7"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:text="@string/chase_week_7"
+            android:textSize="14dp"
+            android:gravity="center"
+            android:layout_marginLeft="@dimen/chase_weekGap"
+
+            >
+        </TextView>
+
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    android:background="#fff">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15sp"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/btn_lesson_back_mine"
+            android:layout_width="20sp"
+            android:layout_height="30sp"
+            android:layout_marginLeft="10sp"
+
+            android:background="@drawable/back_blue"></Button>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:text="我的课程"
+            android:paddingLeft="136dp"
+            android:textSize="18sp"></TextView>
+    </LinearLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="已购课程"
+        android:background="@drawable/yigou"></Button>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="我的劵包"
+        android:background="@drawable/quanbao"></Button>
+    <Button
+        android:id="@+id/btn_mylesson_mycollect"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="我的收藏"
+        android:background="@drawable/wodeshoucang"
+        ></Button>
+
+</LinearLayout>

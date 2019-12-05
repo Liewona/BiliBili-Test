@@ -1,0 +1,456 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/chasing_page"
+    tools:context=".mainviews.headpage.view.fragments.ChasingFragment"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://schemas.android.com/apk/res-auto ">
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="15dp">
+            //顶部轮播图
+
+            <com.lany.banner.BannerView
+                android:id="@+id/chasing_banner"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:background="@drawable/btn_rank_bg">
+
+            </com.lany.banner.BannerView>
+
+            //菜单
+
+            <include layout="@layout/chase_menu"></include>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/chase_linehight2"
+                android:background="@color/darkBlack"
+                android:paddingLeft="-20dp"
+                android:paddingRight="-20dp"
+                android:layout_marginTop="@dimen/dp_18"></View>
+
+            //追番推荐
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_10"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/Rlayout_tile_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp">
+
+                    <TextView
+                        android:id="@+id/tv_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="追番推荐"
+                        android:textSize="13sp"
+                        android:textColor="@color/colorBlack">
+
+                    </TextView>
+
+                    <TextView
+                        android:id="@+id/tv_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="13dp"
+                        android:text="你还没有追番哦，追番后更牛皮"
+                        android:layout_below="@id/tv_1">
+
+                    </TextView>
+
+                    <TextView
+                        android:id="@+id/tv_3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="查看全部>"
+                        android:textSize="13sp"
+                        android:layout_toRightOf="@id/tv_1"
+                        android:layout_marginLeft="253dp">
+
+                    </TextView>
+                </RelativeLayout>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/chase_recycleView_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                </androidx.recyclerview.widget.RecyclerView>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/chase_linehight2"
+                android:background="@color/darkBlack"
+                android:layout_marginTop="@dimen/dp_18"></View>
+
+            //番剧推荐
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_10"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/Rlayout_tile_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp">
+
+                    <TextView
+                        android:id="@+id/tile_1_tv_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="番剧推荐"
+                        android:textSize="13sp"
+                        android:textColor="@color/colorBlack">
+
+                    </TextView>
+
+                    <TextView
+                        android:id="@+id/tile_1_tv_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="查看更多>"
+                        android:textSize="13sp"
+                        android:layout_toRightOf="@id/tile_1_tv_1"
+                        android:layout_marginLeft="253dp">
+
+                    </TextView>
+                </RelativeLayout>
+                //引用外部布局
+
+                <include layout="@layout/chase_recommand1"></include>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/chase_linehight2"
+                android:background="@color/darkBlack"
+                android:layout_marginTop="@dimen/dp_18"></View>
+
+            //国创推荐
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_10"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/Rlayout_tile_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp">
+
+                    <TextView
+                        android:id="@+id/tile_3_tv_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="国创推荐"
+                        android:textSize="13sp"
+                        android:textColor="@color/colorBlack">
+
+                    </TextView>
+
+                    <TextView
+                        android:id="@+id/tile_3_tv_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="查看更多>"
+                        android:textSize="13sp"
+                        android:layout_toRightOf="@id/tile_3_tv_1"
+                        android:layout_marginLeft="253dp">
+
+                    </TextView>
+                </RelativeLayout>
+                //引用外部布局
+
+                <include layout="@layout/chase_recommand2"></include>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/chase_linehight2"
+                android:background="@color/darkBlack"
+                android:layout_marginTop="@dimen/dp_18"></View>
+
+            //一周展示
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <include
+                    android:id="@+id/weekMenu"
+                    layout="@layout/chase_week_menu"></include>
+
+                <FrameLayout
+                    android:id="@+id/chase_fragmentlayput"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp">
+
+                </FrameLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/chase_week_seeAll"
+                    android:textSize="@dimen/dp_10"
+                    android:textColor="@color/nav_bar_text_select_color"
+                    android:gravity="center"></TextView>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/chase_linehight2"
+                android:background="@color/darkBlack"
+                android:layout_marginTop="@dimen/dp_10"></View>
+
+            //热门榜单
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_10"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/Rlayout_tile_4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp">
+
+                    <TextView
+                        android:id="@+id/tile_4_tv_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="热门榜单"
+                        android:textSize="16sp"
+                        android:textColor="@color/colorBlack">
+
+                    </TextView>
+
+                    <TextView
+                        android:id="@+id/tile_4_tv_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="查看更多>"
+                        android:textSize="13sp"
+                        android:layout_toRightOf="@id/tile_4_tv_1"
+                        android:layout_marginLeft="253dp">
+
+                    </TextView>
+                </RelativeLayout>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/chase_recycleView_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                </androidx.recyclerview.widget.RecyclerView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/chase_week_seeAllTop"
+                    android:textSize="@dimen/dp_10"
+                    android:textColor="@color/nav_bar_text_select_color"
+                    android:gravity="center"
+                    android:layout_marginTop="10dp"></TextView>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/chase_linehight2"
+                android:background="@color/darkBlack"
+                android:layout_marginTop="@dimen/dp_10"></View>
+
+
+            //大家都在看
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <include layout="@layout/chase_ourlook"></include>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/chase_linehight2"
+                android:background="@color/darkBlack"
+                android:layout_marginTop="@dimen/dp_10"></View>
+
+            //搞笑.番剧
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_10"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/Rlayout_tile_5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp">
+
+                    <TextView
+                        android:id="@+id/tile_5_tv_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="搞笑.番剧"
+                        android:textSize="13sp"
+                        android:textColor="@color/colorBlack">
+
+                    </TextView>
+
+                    <TextView
+                        android:id="@+id/tile_5_tv_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="查看更多>"
+                        android:textSize="13sp"
+                        android:layout_toRightOf="@id/tile_5_tv_1"
+                        android:layout_marginLeft="253dp">
+
+                    </TextView>
+                </RelativeLayout>
+                //引用外部布局
+
+                <include layout="@layout/chase_recommand3"></include>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/chase_linehight2"
+                android:background="@color/darkBlack"
+                android:layout_marginTop="@dimen/dp_10"></View>
+
+            //热血.番剧
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_10"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/Rlayout_tile_7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp">
+
+                    <TextView
+                        android:id="@+id/tile_7_tv_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="搞笑.番剧"
+                        android:textSize="13sp"
+                        android:textColor="@color/colorBlack">
+
+                    </TextView>
+
+                    <TextView
+                        android:id="@+id/tile_7_tv_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="查看更多>"
+                        android:textSize="13sp"
+                        android:layout_toRightOf="@id/tile_7_tv_1"
+                        android:layout_marginLeft="253dp">
+
+                    </TextView>
+                </RelativeLayout>
+                //引用外部布局
+
+                <include layout="@layout/chase_recommand5"></include>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/chase_linehight2"
+                android:background="@color/darkBlack"
+                android:layout_marginTop="@dimen/dp_10"></View>
+
+            //校园.番剧
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_10"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/Rlayout_tile_6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp">
+
+                    <TextView
+                        android:id="@+id/tile_6_tv_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="搞笑.番剧"
+                        android:textSize="13sp"
+                        android:textColor="@color/colorBlack">
+
+                    </TextView>
+
+                    <TextView
+                        android:id="@+id/tile_6_tv_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="查看更多>"
+                        android:textSize="13sp"
+                        android:layout_toRightOf="@id/tile_6_tv_1"
+                        android:layout_marginLeft="253dp">
+
+                    </TextView>
+                </RelativeLayout>
+                //引用外部布局
+
+                <include layout="@layout/chase_recommand4"></include>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/chase_linehight2"
+                android:background="@color/darkBlack"
+                android:layout_marginTop="@dimen/dp_10"></View>
+
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginTop="20dp"></ImageView>
+        </LinearLayout>
+    </ScrollView>
+
+
+</FrameLayout>
